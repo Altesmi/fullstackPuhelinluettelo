@@ -1,0 +1,30 @@
+{
+  "name": "fullstackpuhelinluettelo",
+  "version": "0.0.1",
+  "description": "Fullstack MOOC -kurssin puhelinluettelo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Altesmi/fullstackPuhelinluettelo.git"
+  },
+  "keywords": [
+    "fullstack"
+  ],
+  "author": "Olli-Pekka Tikkanen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Altesmi/fullstackPuhelinluettelo/issues"
+  },
+  "homepage": "https://github.com/Altesmi/fullstackPuhelinluettelo#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}
