@@ -6,6 +6,8 @@ const cors = require('cors');
 
 app.use(cors())
 app.use(bodyParser.json());
+app.use(express.static('build'))
+
 
 /* define a token function for morgan
 returns the content of the message if any exists */
