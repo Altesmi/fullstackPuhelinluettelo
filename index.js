@@ -60,22 +60,23 @@ app.delete("/api/persons/:id", (req, res) => {
       res.status(204).end();
     })
     .catch(error => {
+      console.log(error);
       res.status(400).send({ error: "bad id" });
     });
 });
 
-app.put('/api/persons/:id', (req, res) => {
+app.put("/api/persons/:id", (req, res) => {
   const updatedPerson = {
     name: req.body.name,
     number: req.body.number
-  }
-  Person.findByIdAndUpdate(req.params.id,updatedPerson, {new:true}).then(updatedPerson => {
-    console.log(updatedPerson)
-    res.json(Person.format(updatedPerson))
+  };
+  Person.findByIdAndUpdate(req.params.id,updatedPerson, { new:true }).then(updatedPerson => {
+    console.log(updatedPerson);
+    res.json(Person.format(updatedPerson));
   }).catch(error => {
     console.log(error);
-    res.status(400).send({error: 'bad id'})
-  })
+    res.status(400).send({ error: "bad id" });
+  });
 
 });
 

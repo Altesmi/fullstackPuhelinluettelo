@@ -19,7 +19,7 @@ personSchema.statics.format = function(person) {
     number: person.number,
     id: person._id
   };
-} 
+};
 
 const Person = mongoose.model("Person", personSchema);
 
